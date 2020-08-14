@@ -1,0 +1,12 @@
+version: '2'
+services:
+ website:
+  container_name: apacheDeploy
+  image: apache_base
+  build:
+   context: ./
+  volumes:
+   - /home/surya/DockerKubernetes/src:/var/www/html/
+  restart: always
+  ports:
+   - 8000:80
