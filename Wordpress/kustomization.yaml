@@ -1,0 +1,7 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=071999
+resources:
+  - web-server.yaml
+  - database-server.yaml
